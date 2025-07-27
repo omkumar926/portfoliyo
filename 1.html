@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Diagonal Hero</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: sans-serif;
+    }
+
+    .hero {
+      display: flex;
+      height: 100vh;
+    }
+
+    .left {
+      background: #e0e0e0;
+      flex: 1;
+      padding: 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .right {
+      background: black;
+      flex: 1;
+      position: relative;
+      clip-path: polygon(10% 0%, 100% 0%, 100% 100%, 0% 100%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .right img {
+      height: 80%;
+      object-fit: contain;
+      z-index: 2;
+    }
+
+    .nav {
+      position: absolute;
+      top: 30px;
+      right: 50px;
+      display: flex;
+      gap: 2rem;
+      z-index: 3;
+    }
+
+    .nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .nav a.contact {
+      background: white;
+      color: black;
+      padding: 8px 20px;
+      border-radius: 25px;
+    }
+
+  </style>
+</head>
+<body>
+
+  <section class="hero">
+    <div class="left">
+      <h1>Hello, I'm <br><strong>Om Developer</strong></h1>
+    </div>
+
+    <div class="right">
+      <div class="nav">
+        <a href="#">About me</a>
+        <a href="#">Skills</a>
+        <a href="#">Portfolio</a>
+        <a class="contact" href="#">Contact me</a>
+      </div>
+
+      <img src="https://i.ibb.co/3mcbXMC/sample-man.png" alt="Person">
+    </div>
+  </section>
+
+</body>
+</html>
